@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">NSBD</string>
+    <string name="title_graph">График</string>
+    <string name="title_integral">Интеграл</string>
+    <string name="title_info">Справка</string>
+
+    <string name="functions">Функции</string>
+    <string name="enter_func">Введите функцию</string>
+    <string name="ok">ОК</string>
+    <string name="high_boarder">Верхний</string>
+    <string name="low_boarder">Нижний</string>
+    <string name="low_full_boarder">Нижний предел</string>
+    <string name="high_full_boarder">Верхний предел</string>
+
+    <string name="info_graph_text">В разделе <b><i>График</i></b> можно начертить графики всех поддерживаемых функций.</string>
+    <string name="info_integral_text">В разделе <b><i>Интеграл</i></b> можно вычислить определённый интеграл всех поддерживаемых функций и увидеть его геометрический смысл.</string>
+    <string name="info_constants_text">
+        <b><i>Поддерживаемые константы:</i></b> \n\n
+        \t1.\t Число Пи: <b><i>pi</i></b> ≈ 3.1415\n
+        \t2.\t Число Эйлера: <b><i>e</i></b> ≈ 2.7182
+    </string>
+    <string name="info_functions_text">
+        <b><i>Поддерживаемые функции:</i></b> \n\n
+        \t1.\t +\n
+        \t2.\t -\n
+        \t3.\t *\n
+        \t4.\t /\n
+        \t5.\t ^\n
+        \t6.\t sin(x)\n
+        \t7.\t cos(x)\n
+        \t8.\t tg(x)\n
+        \t9.\t ctg(x)\n
+        \t10.\t sqrt(x)\n
+        \t11.\t abs(x)\n
+        \t12.\t asin(x)\n
+        \t13.\t acos(x)\n
+        \t14.\t atg(x)\n
+        \t15.\t ln(x)\n
+        \t16.\t lg(x)\n
+        \t17.\t log(g(x); f(x))\n \n
+
+        <i><b>Пример: </b>\n
+            \t\ty = (sin(x) + cos(pi / 4)) ^ pi</i>
+    </string>
+</resources>

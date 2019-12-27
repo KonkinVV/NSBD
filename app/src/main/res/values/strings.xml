@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">NSBD</string>
+    <string name="title_graph">Graph</string>
+    <string name="title_integral">Integral</string>
+    <string name="title_info">Info</string>
+
+    <string name="functions">Funcs</string>
+    <string name="enter_func">Enter function</string>
+    <string name="ok">OK</string>
+    <string name="high_boarder">Ceiling</string>
+    <string name="low_boarder">Floor</string>
+    <string name="low_full_boarder">Floor limit</string>
+    <string name="high_full_boarder">Ceiling limit</string>
+
+    <string name="info_graph_text">In part <b><i>Graph</i></b> you can draw dependence of all supported functions.</string>
+    <string name="info_integral_text">In part <b><i>Integral</i></b> you can calculate definite integral of all supported functions
+        and look him geometry sense.</string>
+    <string name="info_constants_text">
+        <b><i>Supported constants:</i></b> \n\n
+        \t1.\t The number Pi: <b><i>pi</i></b> ≈ 3.1415\n
+        \t2.\t Euler"'"s number: <b><i>e</i></b> ≈ 2.7182
+    </string>
+    <string name="info_functions_text">
+        <b><i>Supported functions:</i></b> \n\n
+        \t1.\t +\n
+        \t2.\t -\n
+        \t3.\t *\n
+        \t4.\t /\n
+        \t5.\t ^\n
+        \t6.\t sin(x)\n
+        \t7.\t cos(x)\n
+        \t8.\t tg(x)\n
+        \t9.\t ctg(x)\n
+        \t10.\t sqrt(x)\n
+        \t11.\t abs(x)\n
+        \t12.\t asin(x)\n
+        \t13.\t acos(x)\n
+        \t14.\t atg(x)\n
+        \t15.\t ln(x)\n
+        \t16.\t lg(x)\n
+        \t17.\t log(g(x); f(x))\n \n
+
+        <i><b>Example: </b>\n
+            \t\ty = (sin(x) + cos(pi / 4)) ^ pi</i>
+    </string>
+</resources>

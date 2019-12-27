@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controllers.fragment.IntegralFragment">
+
+    <EditText
+        android:id="@+id/fragment_integral__func_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/default_vertical_margin"
+        android:layout_marginBottom="@dimen/default_half_vertical_margin"
+        android:layout_marginEnd="@dimen/default_horizontal_margin"
+        android:layout_marginStart="@dimen/default_horizontal_margin"
+        android:padding="@dimen/default_vertical_margin"
+
+        android:background="@color/white"
+        android:hint="@string/enter_func"
+        android:inputType="text"
+        android:textSize="@dimen/default_text_size"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fragment_integral__left_boarder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_half_vertical_margin"
+        android:layout_marginBottom="@dimen/default_half_vertical_margin"
+        android:layout_marginEnd="@dimen/default_half_horizontal_margin"
+        android:layout_marginStart="@dimen/default_horizontal_margin"
+        android:padding="@dimen/default_vertical_margin"
+
+        android:background="@color/white"
+        android:hint="@string/low_boarder"
+        android:inputType="numberSigned|numberDecimal"
+        android:textSize="@dimen/default_text_size"
+
+        app:layout_constraintEnd_toStartOf="@id/fragment_integral__right_boarder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_integral__func_text"
+        app:layout_constraintBottom_toTopOf="@id/fragment_integral__result"
+        />
+
+    <EditText
+        android:id="@+id/fragment_integral__right_boarder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/default_half_vertical_margin"
+        android:layout_marginBottom="@dimen/default_half_vertical_margin"
+        android:layout_marginEnd="@dimen/default_horizontal_margin"
+        android:layout_marginStart="@dimen/default_half_horizontal_margin"
+        android:padding="@dimen/default_vertical_margin"
+
+        android:background="@color/white"
+
+        android:hint="@string/high_boarder"
+        android:inputType="numberSigned|numberDecimal"
+        android:textSize="@dimen/default_text_size"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragment_integral__left_boarder"
+        app:layout_constraintTop_toBottomOf="@id/fragment_integral__func_text"
+        app:layout_constraintBottom_toTopOf="@id/fragment_integral__result"
+        />
+
+    <TextView
+        android:id="@+id/fragment_integral__result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/default_half_vertical_margin"
+        android:layout_marginBottom="@dimen/default_half_vertical_margin"
+        android:layout_marginEnd="@dimen/default_horizontal_margin"
+        android:layout_marginStart="@dimen/default_horizontal_margin"
+        android:padding="@dimen/default_vertical_margin"
+
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/default_text_title_size"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toTopOf="@id/fragment_integral__integral_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_integral__left_boarder" />
+
+    <com.develop.konkin.drawit.view.IntegralView
+        android:id="@+id/fragment_integral__integral_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:layout_marginTop="@dimen/default_half_vertical_margin"
+        android:layout_marginBottom="@dimen/default_half_vertical_margin"
+        android:layout_marginEnd="@dimen/default_horizontal_margin"
+        android:layout_marginStart="@dimen/default_horizontal_margin"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_integral__result" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fragment_integral__button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+
+        android:src="@drawable/ic_baseline_create_24px"
+        android:tint="@android:color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

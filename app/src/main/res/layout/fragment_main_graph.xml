@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_main_graph__container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.fragment.graph.MainGraphFragment">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fragment_main_graph__button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_baseline_create_24px"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/fragment_main_graph__fab_change_screen"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fragment_main_graph__fab_change_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@drawable/graph_swap_state"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
