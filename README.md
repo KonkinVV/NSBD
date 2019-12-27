@@ -1,7 +1,14 @@
 # NSBD
 Приложение для платформы Android для отображения графиков наиболее популярных триганометрических функций и вычисления их интегралов
-![alt text](images/1.jpg "graphic") ![alt text](images/2.jpg "integral") 
-поддерживаемые функции:
+
+
+![alt text](images/1.jpg "graphic") 
+
+![alt text](images/2.jpg "integral") 
+
+
+
+## Поддерживаемые функции:
 1. +
 2. -
 3. *
